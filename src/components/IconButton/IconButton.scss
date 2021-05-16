@@ -1,0 +1,29 @@
+@import 'carbon-components/scss/components/button/_button.scss';
+
+$icon-btw-margin: 10%;
+
+%icon-btn-template {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon-btn {
+  @extend %icon-btn-template;
+  flex-direction: row;
+  p {
+    margin-left: $icon-btw-margin;
+  }
+}
+
+.icon-btn-reverse {
+  @extend %icon-btn-template;
+  flex-direction: row-reverse;
+  p {
+    margin-right: $icon-btw-margin;
+  }
+}
+
+.nav-btn:hover {
+  color: white;
+}
