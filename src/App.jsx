@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './containers/Home';
 import Movies from './containers/Movies';
-import Series from './containers/Series';
 import { getMockedData as getData } from './Services/ApiClient';
+import './App.scss';
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -29,10 +29,10 @@ const App = () => {
             <Home />
           </Route>
           <Route exact path='/movies'>
-            <Movies movies={movies} />
+            <Movies title='Popular Movies' movies={movies} />
           </Route>
           <Route exact path='/series'>
-            <Series series={series} />
+            <Movies title='Popular Series' movies={series} />
           </Route>
         </Switch>
       </Router>
