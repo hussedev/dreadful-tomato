@@ -18,6 +18,7 @@ import iconMovies from '../../assets/icon-movies.png';
 import iconSeries from '../../assets/icon-series.png';
 import logo from '../../assets/logo.png';
 import IconButton from '../IconButton';
+import './Navbar.scss';
 
 const Navbar = ({ currentPage }) => {
   const handleFilterClick = () => {};
