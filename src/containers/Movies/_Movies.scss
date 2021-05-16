@@ -1,0 +1,37 @@
+@import '../../styles/main';
+
+$navbar-height: 6vh;
+
+.movies-container {
+  height: 100vh;
+}
+
+.rows-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-container {
+  height: $navbar-height;
+}
+
+.movies {
+  height: 100vh - $navbar-height;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.dashboard-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  h1 {
+    color: white;
+  }
+}
+
+.footer-container {
+}
