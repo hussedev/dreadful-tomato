@@ -1,0 +1,30 @@
+@import 'carbon-components/scss/components/ui-shell/_ui-shell.scss';
+
+.navbar {
+  position: fixed;
+  top: 0;
+  height: 6vh;
+  width: 100%;
+  background-color: $background_dark_color;
+  color: $font_color;
+  display: flex;
+  justify-content: space-between;
+}
+
+Button {
+  color: white;
+}
+
+.nav-btn {
+  color: white;
+}
+
+.trial-btn {
+  background-color: red;
+  border-radius: 25px;
+  p {
+    margin: 20px 30px;
+    font-size: large;
+    font-weight: bold;
+  }
+}
