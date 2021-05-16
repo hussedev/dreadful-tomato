@@ -1,0 +1,28 @@
+@import '../../styles/main';
+
+$navbar-height: 6vh;
+
+.home-container {
+  height: 100vh;
+}
+
+.navbar-container {
+  height: $navbar-height;
+}
+
+.home {
+  height: 100vh - $navbar-height;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content-container {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  height: 100%;
+}
+
+.footer-container {
+}
